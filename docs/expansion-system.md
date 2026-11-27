@@ -91,24 +91,7 @@ These live on the dock as club-owned lab kits.
 - Every transmitting head declares a TX flag and its FCC ID in its manifest. Ship only antennas of the type and gain the module's grant lists, and use RP-SMA.
 - With no head fitted, the badge still runs: its own Wi-Fi, Bluetooth and 802.15.4 keep working, and radio apps pause with a "No radio head" notice.
 
-**Head contacts (24 pads)**
-
-| Pad | Signal | Notes |
-|---|---|---|
-| H1–H4 | GND ×4 | H1–H2 on long springs, so they mate first |
-| H5 | 3V3_SW | ≤300 mA, eFuse on the badge |
-| H6–H7 | VBAT_SW ×2 | 1 A peak / 0.5 A average, doubled contact |
-| H8–H9 | ID_SDA, ID_SCL | The head's own I2C mux channel; ID EEPROM at 0x50 |
-| H10–H13 | SCK, COPI, CIPO, CS | Shared SPI; CIPO is buffered and high-Z until enabled |
-| H14 | IRQ | e.g. SX1262 DIO1 |
-| H15 | BUSY / IO | e.g. SX1262 BUSY |
-| H16 | RESET | Driven from the I/O expander |
-| H17–H18 | UART TX, RX | For heads with their own processor |
-| H19 | RADIO_IN | Into the codec line input, placed beside a GND pad |
-| H20 | DET | Shortest spring: mates last, breaks first |
-| H21–H24 | Reserved | Candidates: USB D+/D− in a later revision |
-
-Compared with the panel's rail, CAN TX/RX and VIN_EXT come off the top, and BUSY and RESET go on, because driving a LoRa chip directly needs them. **[v0.2]**
+**Head contacts:** 24 pads: 4 GND, 3V3_SW, 2 × VBAT_SW, ID I2C (2), SPI (4), IRQ, BUSY/IO, RESET, UART TX/RX, DET, RADIO_IN, and 4 reserved. The pin-by-pin positions are in [module-interface.md §4.2](module-interface.md#42-head-contacts-positional). Compared with the panel's rail, CAN and VIN_EXT left the top, and BUSY and RESET joined. **[v0.2]**
 
 ## 4. Rear pack: carrier and two bays
 
@@ -125,7 +108,7 @@ Compared with the panel's rail, CAN TX/RX and VIN_EXT come off the top, and BUSY
 - **Contacts:**
   - The 12 springs for each bay sit over the roughly 6 mm strip beside the battery. Spring and screw force go into the case walls, never the battery pouch.
   - A 1 mm swell gap stays above the cell.
-- **Two steel dowels per bay**, one of them offset. A module turned the wrong way can't seat; without this it would put VBAT onto CIPO.
+- **Two steel dowels per bay**, one of them offset (exact positions in [module-interface.md §2.3](module-interface.md#23-dowels-and-keying)). A module turned the wrong way can't seat; without this it would put VBAT onto CIPO.
 - **Lid:** screwed on. An interlock spring (one GPIO for the whole carrier) cuts power to both bays before the module contacts let go.
 - **Bays are receive-only.** They sit on the battery, against your body, so transmitters never go there.
 
@@ -340,4 +323,6 @@ These follow from the radio-first requirement and **need panel review**:
 | `docs/expansion-system.md` | This document |
 | `docs/design-decisions.md` | Everything else the design review decided |
 | `docs/parts-catalog.md` | Candidate parts and modules, tagged by where they fit |
+| `docs/module-interface.md` | Pin-by-pin and mm-by-mm detail for module designers |
+| `docs/board-plan.md` | Dev board → Rev A → Rev B → production |
 | `docs/images/` | Renders and scale drawings used in these docs |

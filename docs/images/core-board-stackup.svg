@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="150" viewBox="0 0 700 150" role="img" aria-label="Four-layer stackup: top signals and parts, solid ground, power pours, bottom test pads">
+<style>
+svg{display:block;width:100%;height:auto;min-width:600px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11.5px}
+.t{fill:#0B0E18;font-weight:600;font-size:12px}
+.tm{fill:#555D6B;font-size:11px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.leader{stroke:#555D6B;stroke-width:1;fill:none}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.ic{fill:#2B303C;stroke:#5A6273;stroke-width:.8}
+.gold{fill:#C9A227}
+.goldo{fill:none;stroke:#C9A227;stroke-width:1.2;stroke-dasharray:2 1.5}
+.silver{fill:#B9C0CA;stroke:#7D8696;stroke-width:.8}
+.plastic{fill:#E8E3D8;stroke:#8C95A6;stroke-width:.8}
+.black{fill:#0B0D12;stroke:#5A6273;stroke-width:.8}
+.tan{fill:#C8A878;stroke:#8C7A5A;stroke-width:.8}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:4 3;opacity:.75}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.85}
+.chiptext{fill:#0B0E18;font-size:9px;font-weight:700}
+.keep{fill:url(#kh);stroke:#00C8E6;stroke-width:1}
+.khl{stroke:#00C8E6;stroke-width:1.1}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:2}
+.batt{fill:#B8BEC8;fill-opacity:.18;stroke:#B8BEC8;stroke-width:1.2;stroke-dasharray:5 3}
+.grid{fill:#C9A227;opacity:.8}
+.layer-cu{fill:#C9A227}
+.layer-di{fill:#5E6B4E}
+.layer-mask{fill:#161A22}
+.sw{stroke:#DDD6C7;stroke-width:1}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="150" fill="#F3F0E9"/>
+    <rect x="20" y="20" width="250" height="6" class="layer-mask"/><rect x="20" y="26" width="250" height="5" class="layer-cu"/>
+    <rect x="20" y="31" width="250" height="14" class="layer-di" opacity=".7"/>
+    <rect x="20" y="45" width="250" height="4" class="layer-cu"/>
+    <rect x="20" y="49" width="250" height="48" class="layer-di"/>
+    <rect x="20" y="97" width="250" height="4" class="layer-cu"/>
+    <rect x="20" y="101" width="250" height="14" class="layer-di" opacity=".7"/>
+    <rect x="20" y="115" width="250" height="5" class="layer-cu"/><rect x="20" y="120" width="250" height="6" class="layer-mask"/>
+    <g class="leader"><line x1="270" y1="28" x2="290" y2="28"/><line x1="270" y1="47" x2="290" y2="52"/><line x1="270" y1="99" x2="290" y2="96"/><line x1="270" y1="117" x2="290" y2="120"/></g>
+    <text x="296" y="32" class="t">L1 top: every part and signal</text><text x="500" y="32" class="tm">USB pair at 90 Ω over ground</text>
+    <text x="296" y="56" class="t">L2: solid ground</text><text x="500" y="56" class="tm">unbroken except the keep-out</text>
+    <text x="296" y="100" class="t">L3: power pours (3V3, VBAT)</text><text x="500" y="100" class="tm">plus ground fill</text>
+    <text x="296" y="124" class="t">L4 bottom: test pads, slow signals</text><text x="500" y="124" class="tm">no parts; faces the battery</text>
+    <text x="20" y="144" class="tm">Thin prepreg sits between L1/L2 and L3/L4, with a thick core in the middle; the fab's controlled-impedance stackup sets the exact values.</text>
+  </svg>

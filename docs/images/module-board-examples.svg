@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="340" viewBox="0 0 700 340" role="img" aria-label="Three 24 by 64 mm bay module boards (lightning sensor, logic analyzer tool module, blank proto card) and a 50 by 13 mm radio head board with LoRa and IR">
+<style>
+svg{display:block;width:100%;height:auto;min-width:600px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11.5px}
+.t{fill:#0B0E18;font-weight:600;font-size:12px}
+.tm{fill:#555D6B;font-size:11px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.leader{stroke:#555D6B;stroke-width:1;fill:none}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.ic{fill:#2B303C;stroke:#5A6273;stroke-width:.8}
+.gold{fill:#C9A227}
+.goldo{fill:none;stroke:#C9A227;stroke-width:1.2;stroke-dasharray:2 1.5}
+.silver{fill:#B9C0CA;stroke:#7D8696;stroke-width:.8}
+.plastic{fill:#E8E3D8;stroke:#8C95A6;stroke-width:.8}
+.black{fill:#0B0D12;stroke:#5A6273;stroke-width:.8}
+.tan{fill:#C8A878;stroke:#8C7A5A;stroke-width:.8}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:4 3;opacity:.75}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.85}
+.chiptext{fill:#0B0E18;font-size:9px;font-weight:700}
+.keep{fill:url(#kh);stroke:#00C8E6;stroke-width:1}
+.khl{stroke:#00C8E6;stroke-width:1.1}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:2}
+.batt{fill:#B8BEC8;fill-opacity:.18;stroke:#B8BEC8;stroke-width:1.2;stroke-dasharray:5 3}
+.grid{fill:#C9A227;opacity:.8}
+.layer-cu{fill:#C9A227}
+.layer-di{fill:#5E6B4E}
+.layer-mask{fill:#161A22}
+.sw{stroke:#DDD6C7;stroke-width:1}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="340" fill="#F3F0E9"/>
+    <g>
+      <rect x="30" y="30" width="81.6" height="217.6" rx="4" class="board"/>
+      <g class="goldo"><circle cx="36" cy="117" r="2.6"/><circle cx="44.6" cy="117" r="2.6"/><circle cx="36" cy="125.6" r="2.6"/><circle cx="44.6" cy="125.6" r="2.6"/><circle cx="36" cy="134.3" r="2.6"/><circle cx="44.6" cy="134.3" r="2.6"/><circle cx="36" cy="142.9" r="2.6"/><circle cx="44.6" cy="142.9" r="2.6"/><circle cx="36" cy="151.5" r="2.6"/><circle cx="44.6" cy="151.5" r="2.6"/><circle cx="36" cy="160.2" r="2.6"/><circle cx="44.6" cy="160.2" r="2.6"/></g>
+      <circle cx="70.8" cy="47" r="3" class="hole"/><rect x="85" y="227" width="10" height="5.6" rx="2.8" class="hole"/>
+      <rect x="57" y="98" width="13.6" height="13.6" class="ic"/><text x="63.8" y="124" text-anchor="middle" class="silktext">AS3935</text>
+      <rect x="57" y="166" width="30.6" height="10.2" class="tan"/><rect x="52" y="160" width="40.6" height="22" class="silk"/><text x="72" y="196" text-anchor="middle" class="silktext">coil, no copper</text>
+      <rect x="82" y="122" width="10.2" height="5.4" class="ic"/><text x="87" y="138" text-anchor="middle" class="silktext">ID</text>
+    </g>
+    <text x="30" y="268" class="t">Bay: lightning</text><text x="30" y="282" class="tm">AS3935 + coil + ID</text><text x="30" y="296" class="tm">2-layer · ~$5–10</text>
+
+    <g transform="translate(20,0)">
+    <g>
+      <rect x="150" y="30" width="81.6" height="217.6" rx="4" class="board"/>
+      <g class="goldo"><circle cx="156" cy="117" r="2.6"/><circle cx="164.6" cy="117" r="2.6"/><circle cx="156" cy="125.6" r="2.6"/><circle cx="164.6" cy="125.6" r="2.6"/><circle cx="156" cy="134.3" r="2.6"/><circle cx="164.6" cy="134.3" r="2.6"/><circle cx="156" cy="142.9" r="2.6"/><circle cx="164.6" cy="142.9" r="2.6"/><circle cx="156" cy="151.5" r="2.6"/><circle cx="164.6" cy="151.5" r="2.6"/><circle cx="156" cy="160.2" r="2.6"/><circle cx="164.6" cy="160.2" r="2.6"/></g>
+      <circle cx="190.8" cy="47" r="3" class="hole"/><rect x="205" y="227" width="10" height="5.6" rx="2.8" class="hole"/>
+      <rect x="177" y="91" width="23.8" height="23.8" class="ic"/><text x="189" y="125" text-anchor="middle" class="silktext">RP2350</text>
+      <rect x="180" y="130" width="10.2" height="6.8" class="ic"/><text x="185" y="146" text-anchor="middle" class="silktext">flash</text>
+      <rect x="204" y="95" width="10.9" height="8.5" class="silver"/>
+      <rect x="202" y="128" width="10.2" height="5.4" class="ic"/><text x="207" y="144" text-anchor="middle" class="silktext">ID</text>
+      <rect x="170" y="186" width="40.8" height="8" class="ic"/><text x="190" y="206" text-anchor="middle" class="silktext">input protection</text>
+      <rect x="160" y="227" width="40.8" height="27" class="plastic"/><rect x="203" y="224" width="27" height="30" rx="2" class="silver"/>
+    </g>
+    <text x="150" y="268" class="t">Tool bay: logic</text><text x="150" y="282" class="tm">RP2350 analyzer;</text><text x="150" y="296" class="tm">probe + USB-C exit</text><text x="150" y="310" class="tm">2-layer · ~$10–15</text>
+    </g>
+
+    <g transform="translate(40,0)">
+    <g>
+      <rect x="270" y="30" width="81.6" height="217.6" rx="4" class="board"/>
+      <g class="goldo"><circle cx="276" cy="117" r="2.6"/><circle cx="284.6" cy="117" r="2.6"/><circle cx="276" cy="125.6" r="2.6"/><circle cx="284.6" cy="125.6" r="2.6"/><circle cx="276" cy="134.3" r="2.6"/><circle cx="284.6" cy="134.3" r="2.6"/><circle cx="276" cy="142.9" r="2.6"/><circle cx="284.6" cy="142.9" r="2.6"/><circle cx="276" cy="151.5" r="2.6"/><circle cx="284.6" cy="151.5" r="2.6"/><circle cx="276" cy="160.2" r="2.6"/><circle cx="284.6" cy="160.2" r="2.6"/></g>
+      <circle cx="310.8" cy="47" r="3" class="hole"/><rect x="325" y="227" width="10" height="5.6" rx="2.8" class="hole"/>
+      <g class="grid">
+        <circle cx="297" cy="60" r="1.6"/><circle cx="305.6" cy="60" r="1.6"/><circle cx="314.2" cy="60" r="1.6"/><circle cx="322.8" cy="60" r="1.6"/><circle cx="331.4" cy="60" r="1.6"/><circle cx="340" cy="60" r="1.6"/>
+        <circle cx="297" cy="68.6" r="1.6"/><circle cx="305.6" cy="68.6" r="1.6"/><circle cx="314.2" cy="68.6" r="1.6"/><circle cx="322.8" cy="68.6" r="1.6"/><circle cx="331.4" cy="68.6" r="1.6"/><circle cx="340" cy="68.6" r="1.6"/>
+        <circle cx="297" cy="77.2" r="1.6"/><circle cx="305.6" cy="77.2" r="1.6"/><circle cx="314.2" cy="77.2" r="1.6"/><circle cx="322.8" cy="77.2" r="1.6"/><circle cx="331.4" cy="77.2" r="1.6"/><circle cx="340" cy="77.2" r="1.6"/>
+        <circle cx="297" cy="85.8" r="1.6"/><circle cx="305.6" cy="85.8" r="1.6"/><circle cx="314.2" cy="85.8" r="1.6"/><circle cx="322.8" cy="85.8" r="1.6"/><circle cx="331.4" cy="85.8" r="1.6"/><circle cx="340" cy="85.8" r="1.6"/>
+        <circle cx="297" cy="94.4" r="1.6"/><circle cx="305.6" cy="94.4" r="1.6"/><circle cx="314.2" cy="94.4" r="1.6"/><circle cx="322.8" cy="94.4" r="1.6"/><circle cx="331.4" cy="94.4" r="1.6"/><circle cx="340" cy="94.4" r="1.6"/>
+        <circle cx="297" cy="103" r="1.6"/><circle cx="305.6" cy="103" r="1.6"/><circle cx="314.2" cy="103" r="1.6"/><circle cx="322.8" cy="103" r="1.6"/><circle cx="331.4" cy="103" r="1.6"/><circle cx="340" cy="103" r="1.6"/>
+        <circle cx="297" cy="172" r="1.6"/><circle cx="305.6" cy="172" r="1.6"/><circle cx="314.2" cy="172" r="1.6"/><circle cx="322.8" cy="172" r="1.6"/><circle cx="331.4" cy="172" r="1.6"/><circle cx="340" cy="172" r="1.6"/>
+        <circle cx="297" cy="180.6" r="1.6"/><circle cx="305.6" cy="180.6" r="1.6"/><circle cx="314.2" cy="180.6" r="1.6"/><circle cx="322.8" cy="180.6" r="1.6"/><circle cx="331.4" cy="180.6" r="1.6"/><circle cx="340" cy="180.6" r="1.6"/>
+        <circle cx="297" cy="189.2" r="1.6"/><circle cx="305.6" cy="189.2" r="1.6"/><circle cx="314.2" cy="189.2" r="1.6"/><circle cx="322.8" cy="189.2" r="1.6"/><circle cx="331.4" cy="189.2" r="1.6"/><circle cx="340" cy="189.2" r="1.6"/>
+        <circle cx="297" cy="197.8" r="1.6"/><circle cx="305.6" cy="197.8" r="1.6"/><circle cx="314.2" cy="197.8" r="1.6"/><circle cx="322.8" cy="197.8" r="1.6"/><circle cx="331.4" cy="197.8" r="1.6"/><circle cx="340" cy="197.8" r="1.6"/>
+        <circle cx="297" cy="206.4" r="1.6"/><circle cx="305.6" cy="206.4" r="1.6"/><circle cx="314.2" cy="206.4" r="1.6"/><circle cx="322.8" cy="206.4" r="1.6"/><circle cx="331.4" cy="206.4" r="1.6"/><circle cx="340" cy="206.4" r="1.6"/>
+      </g>
+      <rect x="302" y="128" width="10.2" height="5.4" class="ic"/><text x="307" y="146" text-anchor="middle" class="silktext">ID (pre-flashed)</text>
+      <text x="318" y="118" text-anchor="middle" class="silktext">0.1" grid</text>
+    </g>
+    <text x="270" y="268" class="t">Proto card</text><text x="270" y="282" class="tm">blank 0.1" grid,</text><text x="270" y="296" class="tm">pre-flashed ID chip</text><text x="270" y="310" class="tm">2-layer · ~$2</text>
+    </g>
+
+    <g transform="translate(30,0)">
+      <text x="400" y="34" class="h">Radio head board: LoRa + IR</text>
+      <circle cx="481.6" cy="48" r="7" class="silver"/><text x="494" y="52" class="tm">RP-SMA on the shell</text>
+      <rect x="400" y="62" width="170" height="44.2" rx="3" class="board"/>
+      <rect x="457.8" y="63.7" width="44.2" height="40.8" class="silver"/><text x="479.9" y="82" text-anchor="middle" class="chiptext">Wio-</text><text x="479.9" y="93" text-anchor="middle" class="chiptext">SX1262</text>
+      <rect x="505.4" y="68.8" width="6.8" height="6.8" class="gold"/>
+      <rect x="413.6" y="62" width="10.2" height="10.2" fill="#E6E9EF" stroke="#8C95A6" stroke-width=".8"/><rect x="536" y="62" width="10.2" height="10.2" fill="#E6E9EF" stroke="#8C95A6" stroke-width=".8"/>
+      <rect x="427.2" y="62" width="17" height="13.6" class="black"/>
+      <rect x="522.4" y="79" width="6.8" height="6.8" class="ic"/><rect x="413.6" y="89.2" width="10.2" height="5.4" class="ic"/>
+      <g class="gold"><rect x="433" y="101" width="3" height="4"/><rect x="441.6" y="101" width="3" height="4"/><rect x="450.2" y="101" width="3" height="4"/><rect x="458.8" y="101" width="3" height="4"/><rect x="467.4" y="101" width="3" height="4"/><rect x="476" y="101" width="3" height="4"/><rect x="484.6" y="101" width="3" height="4"/><rect x="493.2" y="101" width="3" height="4"/><rect x="501.8" y="101" width="3" height="4"/><rect x="510.4" y="101" width="3" height="4"/><rect x="519" y="101" width="3" height="4"/><rect x="527.6" y="101" width="3" height="4"/></g>
+      <g class="silktext" font-weight="700"><text x="418.7" y="80" text-anchor="middle">1</text><text x="541" y="80" text-anchor="middle">1</text><text x="435.7" y="86" text-anchor="middle">2</text><text x="525.8" y="96" text-anchor="middle">3</text><text x="430" y="95" text-anchor="middle">4</text></g>
+      <text x="400" y="128" class="tm">1  940 nm IR LEDs, one at each end</text>
+      <text x="400" y="143" class="tm">2  TSOP38238 IR receiver</text>
+      <text x="400" y="158" class="tm">3  IR LED driver MOSFET</text>
+      <text x="400" y="173" class="tm">4  ID chip</text>
+      <text x="400" y="188" class="tm">Gold strip: 24 contact pads on the south face</text>
+      <text x="400" y="230" class="t">Inside a 55 × 18 × 15 mm printed shell</text>
+      <text x="400" y="244" class="tm">The LoRa radio runs on SPI; the IR uses the two</text>
+      <text x="400" y="258" class="tm">UART pins, which LoRa leaves free. The 1 A</text>
+      <text x="400" y="272" class="tm">battery feed covers IR pulses.</text>
+      <text x="400" y="296" class="tm">2-layer · about $10–14 with the module</text>
+    </g>
+    <text x="30" y="330" class="tm">Scale: 3.4 px per mm. The Wio-SX1262 outline is approximate; check the module datasheet before layout. All prices are estimates.</text>
+  </svg>

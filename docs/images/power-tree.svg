@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="240" viewBox="0 0 700 240" role="img" aria-label="Power tree: USB-C and cover inputs through a priority mux into the charger, battery and buck-boost, then per-port eFuses and battery switches">
+<style>
+svg{display:block;width:100%;height:auto;min-width:620px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11px}
+.t{fill:#0B0E18;font-weight:650;font-size:11.5px}
+.tm{fill:#555D6B;font-size:10.5px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.dim{stroke:#555D6B;stroke-width:1;fill:none}
+.dimt{fill:#555D6B;font-size:10px;font-weight:600}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.padb{fill:none;stroke:#C9A227;stroke-width:1.4;stroke-dasharray:2.2 1.6}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:1.6}
+.zone{fill:#FDA734;fill-opacity:.22;stroke:#FDA734;stroke-width:1.2;stroke-dasharray:4 3}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:3 2.5;opacity:.8}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.9}
+.wall{fill:#DDD6C7;stroke:#555D6B;stroke-width:.8}
+.shell{fill:#DDD6C7;fill-opacity:.35;stroke:#555D6B;stroke-width:.8}
+.pcbs{fill:#161A22;stroke:#3A4258;stroke-width:.8}
+.batt{fill:#B8BEC8;fill-opacity:.35;stroke:#8C95A6;stroke-width:.8}
+.part{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.disp{fill:#0B0E18;stroke:#5A6273;stroke-width:.6}
+.gold{fill:#C9A227}
+.goldl{stroke:#C9A227;stroke-width:2;stroke-linecap:round}
+.guide{stroke:#FDA734;stroke-width:1;stroke-dasharray:4 3}
+.lead{stroke:#555D6B;stroke-width:.9;fill:none}
+.num{fill:#0B0E18;font-size:10px;font-weight:700}
+.numw{fill:#FFFFFF;font-size:10px;font-weight:700}
+.springbody{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.ghost{fill:none;stroke:#555D6B;stroke-dasharray:4 3}
+.arrowl{stroke:#0B0E18;stroke-width:1.3;fill:none}
+.blk{fill:#FFFFFF;stroke:#0B0E18;stroke-width:1.1}
+.blk2{fill:#FFFFFF;stroke:#555D6B;stroke-width:1}
+.bad{fill:#FFFFFF;stroke:#E73035;stroke-width:1.4}
+.ans{fill:#0B0E18}
+.anst{fill:#FFFFFF;font-weight:700;font-size:11.5px}
+.anss{fill:#FFFFFF;font-size:10px;opacity:.85}
+.wire{stroke:#0B0E18;stroke-width:1.1;fill:none}
+.wire2{stroke:#555D6B;stroke-width:1;fill:none}
+.cell{fill:none;stroke:#DDD6C7;stroke-width:1}
+.bi{fill:#555D6B;font-size:8.5px}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="240" fill="#F3F0E9"/>
+  <defs><marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0B0E18"/></marker></defs>
+  <rect x="20" y="20" width="95" height="38" rx="6" class="blk"/><text x="67.5" y="37.0" text-anchor="middle" class="t">USB-C</text><text x="67.5" y="50.0" text-anchor="middle" class="tm">5 V in</text>
+  <rect x="20" y="76" width="95" height="38" rx="6" class="blk"/><text x="67.5" y="93.0" text-anchor="middle" class="t">Cover pads</text><text x="67.5" y="106.0" text-anchor="middle" class="tm">VIN_EXT ≤ 7 V</text>
+  <rect x="145" y="48" width="95" height="38" rx="6" class="blk"/><text x="192.5" y="65.0" text-anchor="middle" class="t">TPS2121</text><text x="192.5" y="78.0" text-anchor="middle" class="tm">USB-C wins</text>
+  <rect x="270" y="48" width="105" height="38" rx="6" class="blk"/><text x="322.5" y="65.0" text-anchor="middle" class="t">BQ24074</text><text x="322.5" y="78.0" text-anchor="middle" class="tm">charger, power path</text>
+  <rect x="405" y="18" width="115" height="38" rx="6" class="blk"/><text x="462.5" y="35.0" text-anchor="middle" class="t">Battery 604065</text><text x="462.5" y="48.0" text-anchor="middle" class="tm">+ MAX17055 sense</text>
+  <rect x="405" y="82" width="115" height="38" rx="6" class="blk"/><text x="462.5" y="99.0" text-anchor="middle" class="t">Buck-boost</text><text x="462.5" y="112.0" text-anchor="middle" class="tm">TPS63802 → 3V3</text>
+  <path d="M115 39 H130 V60 H145" class="wire" marker-end="url(#pa)"/><path d="M115 95 H130 V74 H145" class="wire" marker-end="url(#pa)"/>
+  <path d="M240 67 H270" class="wire" marker-end="url(#pa)"/>
+  <path d="M375 60 H390 V37 H405" class="wire" marker-end="url(#pa)"/><path d="M375 74 H390 V101 H405" class="wire" marker-end="url(#pa)"/>
+  <rect x="530" y="70" width="165" height="74" rx="6" class="blk"/><text x="540" y="86" class="t">3V3 eFuses</text>
+  <text x="540" y="101" class="tm">Bay A 100 mA · Bay B 100 mA</text><text x="540" y="114" class="tm">Head 300 mA</text><text x="540" y="127" class="tm">Qwiic 200 mA (shared)</text><text x="540" y="140" class="tm">700 of 800 mA allocated</text>
+  <rect x="530" y="156" width="165" height="62" rx="6" class="blk"/><text x="540" y="172" class="t">VBAT switches</text>
+  <text x="540" y="187" class="tm">Bay A 300 mA · Bay B 300 mA</text><text x="540" y="200" class="tm">Head 1 A peak, 0.5 A average</text><text x="540" y="213" class="tm">pool 1.2 A peak</text>
+  <path d="M520 101 H530" class="wire" marker-end="url(#pa)"/><path d="M520 37 H525 V187 H530" class="wire" marker-end="url(#pa)"/>
+  <text x="20" y="150" class="tm">Every enable and fault flag goes through the I/O expander,</text>
+  <text x="20" y="164" class="tm">which has pull-downs so every port is off at reset.</text>
+  <text x="20" y="184" class="tm">Each manifest declares its peak current; the badge refuses</text>
+  <text x="20" y="198" class="tm">a module that would overflow the pool and shows live</text>
+  <text x="20" y="212" class="tm">draw per port. 100 mA of continuous load roughly halves</text>
+  <text x="20" y="226" class="tm">the 15-hour Bluetooth-audio runtime.</text>
+</svg>

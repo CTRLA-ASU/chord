@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="225" viewBox="0 0 700 225" role="img" aria-label="I2C tree: internal bus, private bus for the secure element, and an expansion bus through an 8-channel mux">
+<style>
+svg{display:block;width:100%;height:auto;min-width:620px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11px}
+.t{fill:#0B0E18;font-weight:650;font-size:11.5px}
+.tm{fill:#555D6B;font-size:10.5px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.dim{stroke:#555D6B;stroke-width:1;fill:none}
+.dimt{fill:#555D6B;font-size:10px;font-weight:600}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.padb{fill:none;stroke:#C9A227;stroke-width:1.4;stroke-dasharray:2.2 1.6}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:1.6}
+.zone{fill:#FDA734;fill-opacity:.22;stroke:#FDA734;stroke-width:1.2;stroke-dasharray:4 3}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:3 2.5;opacity:.8}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.9}
+.wall{fill:#DDD6C7;stroke:#555D6B;stroke-width:.8}
+.shell{fill:#DDD6C7;fill-opacity:.35;stroke:#555D6B;stroke-width:.8}
+.pcbs{fill:#161A22;stroke:#3A4258;stroke-width:.8}
+.batt{fill:#B8BEC8;fill-opacity:.35;stroke:#8C95A6;stroke-width:.8}
+.part{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.disp{fill:#0B0E18;stroke:#5A6273;stroke-width:.6}
+.gold{fill:#C9A227}
+.goldl{stroke:#C9A227;stroke-width:2;stroke-linecap:round}
+.guide{stroke:#FDA734;stroke-width:1;stroke-dasharray:4 3}
+.lead{stroke:#555D6B;stroke-width:.9;fill:none}
+.num{fill:#0B0E18;font-size:10px;font-weight:700}
+.numw{fill:#FFFFFF;font-size:10px;font-weight:700}
+.springbody{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.ghost{fill:none;stroke:#555D6B;stroke-dasharray:4 3}
+.arrowl{stroke:#0B0E18;stroke-width:1.3;fill:none}
+.blk{fill:#FFFFFF;stroke:#0B0E18;stroke-width:1.1}
+.blk2{fill:#FFFFFF;stroke:#555D6B;stroke-width:1}
+.bad{fill:#FFFFFF;stroke:#E73035;stroke-width:1.4}
+.ans{fill:#0B0E18}
+.anst{fill:#FFFFFF;font-weight:700;font-size:11.5px}
+.anss{fill:#FFFFFF;font-size:10px;opacity:.85}
+.wire{stroke:#0B0E18;stroke-width:1.1;fill:none}
+.wire2{stroke:#555D6B;stroke-width:1;fill:none}
+.cell{fill:none;stroke:#DDD6C7;stroke-width:1}
+.bi{fill:#555D6B;font-size:8.5px}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="225" fill="#F3F0E9"/>
+  <rect x="20" y="80" width="120" height="50" rx="6" class="blk"/><text x="80.0" y="103.0" text-anchor="middle" class="t">ESP32-S31</text><text x="80.0" y="116.0" text-anchor="middle" class="tm">3 I2C controllers</text>
+  <path d="M140 105 H165 V40 H190 M165 105 H190 M165 105 V170 H190" class="wire"/>
+  <rect x="190" y="20" width="140" height="40" rx="6" class="blk"/><text x="260.0" y="38.0" text-anchor="middle" class="t">I2C0 · internal</text><text x="260.0" y="51.0" text-anchor="middle" class="tm">400 kHz</text>
+  <rect x="190" y="85" width="140" height="40" rx="6" class="blk"/><text x="260.0" y="103.0" text-anchor="middle" class="t">LP-I2C · private</text><text x="260.0" y="116.0" text-anchor="middle" class="tm">secure element only</text>
+  <rect x="190" y="150" width="140" height="40" rx="6" class="blk"/><text x="260.0" y="168.0" text-anchor="middle" class="t">I2C1 · expansion</text><text x="260.0" y="181.0" text-anchor="middle" class="tm">to the mux</text>
+  <line x1="330" y1="40" x2="345" y2="40" class="wire"/><text x="350" y="37" class="t">codec 0x10 · fuel gauge 0x36</text><text x="350" y="51" class="tm">RTC 0x52 · I/O expander 0x20</text>
+  <line x1="330" y1="105" x2="345" y2="105" class="wire"/><text x="350" y="102" class="t">ATECC608B 0x60</text><text x="350" y="116" class="tm">modules never touch it</text>
+  <line x1="330" y1="170" x2="350" y2="170" class="wire"/><rect x="350" y="150" width="110" height="40" rx="6" class="blk"/><text x="405.0" y="168.0" text-anchor="middle" class="t">TCA9548A</text><text x="405.0" y="181.0" text-anchor="middle" class="tm">0x70, 8 channels</text>
+  <path d="M460 170 H468 V114 H476" class="wire2"/><text x="480" y="118" class="tm">CH0  Bay A</text><path d="M460 170 H468 V127 H476" class="wire2"/><text x="480" y="131" class="tm">CH1  Bay B</text><path d="M460 170 H468 V140 H476" class="wire2"/><text x="480" y="144" class="tm">CH2  Radio head</text><path d="M460 170 H468 V153 H476" class="wire2"/><text x="480" y="157" class="tm">CH3  Qwiic 1</text><path d="M460 170 H468 V166 H476" class="wire2"/><text x="480" y="170" class="tm">CH4  Qwiic 2 (through a switch)</text><path d="M460 170 H468 V179 H476" class="wire2"/><text x="480" y="183" class="tm">CH5–6  4-bay carrier (later)</text><path d="M460 170 H468 V192 H476" class="wire2"/><text x="480" y="196" class="tm">CH7  spare</text>
+  <text x="20" y="218" class="tm">Every module's ID chip sits at 0x50 on its own channel, so two identical modules never collide, and a pod at 0x53 can't be mistaken for an ID chip.</text>
+</svg>

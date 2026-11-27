@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="335" viewBox="0 0 700 335" role="img" aria-label="Decision chart: transmitters go in the radio head, cabled tools in Bay B, Qwiic boards as pods, small receive-only modules in a bay, everything else on the dock">
+<style>
+svg{display:block;width:100%;height:auto;min-width:620px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11px}
+.t{fill:#0B0E18;font-weight:650;font-size:11.5px}
+.tm{fill:#555D6B;font-size:10.5px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.dim{stroke:#555D6B;stroke-width:1;fill:none}
+.dimt{fill:#555D6B;font-size:10px;font-weight:600}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.padb{fill:none;stroke:#C9A227;stroke-width:1.4;stroke-dasharray:2.2 1.6}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:1.6}
+.zone{fill:#FDA734;fill-opacity:.22;stroke:#FDA734;stroke-width:1.2;stroke-dasharray:4 3}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:3 2.5;opacity:.8}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.9}
+.wall{fill:#DDD6C7;stroke:#555D6B;stroke-width:.8}
+.shell{fill:#DDD6C7;fill-opacity:.35;stroke:#555D6B;stroke-width:.8}
+.pcbs{fill:#161A22;stroke:#3A4258;stroke-width:.8}
+.batt{fill:#B8BEC8;fill-opacity:.35;stroke:#8C95A6;stroke-width:.8}
+.part{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.disp{fill:#0B0E18;stroke:#5A6273;stroke-width:.6}
+.gold{fill:#C9A227}
+.goldl{stroke:#C9A227;stroke-width:2;stroke-linecap:round}
+.guide{stroke:#FDA734;stroke-width:1;stroke-dasharray:4 3}
+.lead{stroke:#555D6B;stroke-width:.9;fill:none}
+.num{fill:#0B0E18;font-size:10px;font-weight:700}
+.numw{fill:#FFFFFF;font-size:10px;font-weight:700}
+.springbody{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.ghost{fill:none;stroke:#555D6B;stroke-dasharray:4 3}
+.arrowl{stroke:#0B0E18;stroke-width:1.3;fill:none}
+.blk{fill:#FFFFFF;stroke:#0B0E18;stroke-width:1.1}
+.blk2{fill:#FFFFFF;stroke:#555D6B;stroke-width:1}
+.bad{fill:#FFFFFF;stroke:#E73035;stroke-width:1.4}
+.ans{fill:#0B0E18}
+.anst{fill:#FFFFFF;font-weight:700;font-size:11.5px}
+.anss{fill:#FFFFFF;font-size:10px;opacity:.85}
+.wire{stroke:#0B0E18;stroke-width:1.1;fill:none}
+.wire2{stroke:#555D6B;stroke-width:1;fill:none}
+.cell{fill:none;stroke:#DDD6C7;stroke-width:1}
+.bi{fill:#555D6B;font-size:8.5px}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="335" fill="#F3F0E9"/>
+  <defs><marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0B0E18"/></marker></defs>
+  <rect x="30" y="20" width="320" height="42" rx="8" class="blk2"/><text x="190" y="45" text-anchor="middle" class="t">Does it transmit RF?</text><path d="M350 41 H418" class="wire" marker-end="url(#fa)"/><text x="384" y="35" text-anchor="middle" class="tm">yes</text><rect x="420" y="22" width="260" height="38" rx="19" class="ans"/><text x="550" y="38" text-anchor="middle" class="anst">Radio head</text><text x="550" y="52" text-anchor="middle" class="anss">own FCC ID · one active at a time</text><path d="M190 62 V83" class="wire" marker-end="url(#fa)"/><text x="198" y="76" class="tm">no</text><rect x="30" y="85" width="320" height="42" rx="8" class="blk2"/><text x="190" y="110" text-anchor="middle" class="t">Needs a cable or USB out of the badge?</text><path d="M350 106 H418" class="wire" marker-end="url(#fa)"/><text x="384" y="100" text-anchor="middle" class="tm">yes</text><rect x="420" y="87" width="260" height="38" rx="19" class="ans"/><text x="550" y="103" text-anchor="middle" class="anst">Tool bay (Bay B)</text><text x="550" y="117" text-anchor="middle" class="anss">one at a time · over 300 mA → dock</text><path d="M190 127 V148" class="wire" marker-end="url(#fa)"/><text x="198" y="141" class="tm">no</text><rect x="30" y="150" width="320" height="42" rx="8" class="blk2"/><text x="190" y="175" text-anchor="middle" class="t">Off-the-shelf Qwiic / STEMMA QT board?</text><path d="M350 171 H418" class="wire" marker-end="url(#fa)"/><text x="384" y="165" text-anchor="middle" class="tm">yes</text><rect x="420" y="152" width="260" height="38" rx="19" class="ans"/><text x="550" y="168" text-anchor="middle" class="anst">Qwiic pod</text><text x="550" y="182" text-anchor="middle" class="anss">no soldering · check address clashes</text><path d="M190 192 V213" class="wire" marker-end="url(#fa)"/><text x="198" y="206" class="tm">no</text><rect x="30" y="215" width="320" height="42" rx="8" class="blk2"/><text x="190" y="233" text-anchor="middle" class="t">Fits 24 × 64 mm, parts ≤ 2.5 mm,</text><text x="190" y="247" text-anchor="middle" class="t">≤ 100 / 300 mA, only I2C · SPI · IRQ · IO?</text><path d="M350 236 H418" class="wire" marker-end="url(#fa)"/><text x="384" y="230" text-anchor="middle" class="tm">yes</text><rect x="420" y="217" width="260" height="38" rx="19" class="ans"/><text x="550" y="233" text-anchor="middle" class="anst">Bay A or B</text><text x="550" y="247" text-anchor="middle" class="anss">receive-only · ID chip + manifest</text><path d="M190 257 V278" class="wire" marker-end="url(#fa)"/><text x="198" y="271" class="tm">no</text>
+  <rect x="30" y="280" width="320" height="38" rx="19" class="ans"/><text x="190" y="296" text-anchor="middle" class="anst">Dock</text><text x="190" y="310" text-anchor="middle" class="anss">too big, hot, power-hungry or uncertified</text>
+  <text x="420" y="292" class="t">Then: does it need LAB?</text><text x="420" y="306" class="tm">Transmitting, emulating, injecting or glitching</text><text x="420" y="319" class="tm">means club-owned, loan-only, AUP + training.</text>
+</svg>

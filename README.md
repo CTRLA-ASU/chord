@@ -39,6 +39,17 @@ The name comes from the CTRL+A chord mark: two keys pressed together, a core plu
 | [Design decisions](docs/design-decisions.md) | Core hardware, RF rules, security and responsible use, firmware, timeline, cost, team |
 | [Expansion system](docs/expansion-system.md) | Radio head, rear pack and bays, pods, covers, dock, contact maps, power and pin budgets, how many modules fit |
 | [Parts catalog](docs/parts-catalog.md) | 222 candidate parts and modules, tagged by where each one plugs in |
+| [Module interface](docs/module-interface.md) | Pin-by-pin and mm-by-mm detail for anyone designing a module or radio head |
+| [Board plan](docs/board-plan.md) | Dev board → Rev A → Rev B → production, and what goes on the core board |
+
+## Planning
+
+The [planning folder](planning/) holds the club's working files: the [semester plan](planning/semester-0-plan.md), the [decision log](planning/decisions.md), the [team sheet](planning/team.md) and the [Rev A bring-up checklist](planning/rev-a-bring-up.md). They're meant to be filled in and changed as the project moves.
+
+**Templates:**
+- Propose a module with the *Module proposal* issue template.
+- Propose a change to anything already decided with the *Design change* template.
+- Every pull request gets a short checklist automatically.
 
 ## Roadmap
 

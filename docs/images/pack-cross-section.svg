@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="250" viewBox="0 92 700 250" role="img" aria-label="Cross-section showing the core with display, board, battery and riser strips, then the carrier board, springs, two bay modules with parts, and the lid, with a height budget adding up to about 6.9 mm">
+<style>
+svg{display:block;width:100%;height:auto;min-width:620px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11px}
+.t{fill:#0B0E18;font-weight:650;font-size:11.5px}
+.tm{fill:#555D6B;font-size:10.5px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.dim{stroke:#555D6B;stroke-width:1;fill:none}
+.dimt{fill:#555D6B;font-size:10px;font-weight:600}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.padb{fill:none;stroke:#C9A227;stroke-width:1.4;stroke-dasharray:2.2 1.6}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:1.6}
+.zone{fill:#FDA734;fill-opacity:.22;stroke:#FDA734;stroke-width:1.2;stroke-dasharray:4 3}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:3 2.5;opacity:.8}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.9}
+.wall{fill:#DDD6C7;stroke:#555D6B;stroke-width:.8}
+.shell{fill:#DDD6C7;fill-opacity:.35;stroke:#555D6B;stroke-width:.8}
+.pcbs{fill:#161A22;stroke:#3A4258;stroke-width:.8}
+.batt{fill:#B8BEC8;fill-opacity:.35;stroke:#8C95A6;stroke-width:.8}
+.part{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.disp{fill:#0B0E18;stroke:#5A6273;stroke-width:.6}
+.gold{fill:#C9A227}
+.goldl{stroke:#C9A227;stroke-width:2;stroke-linecap:round}
+.guide{stroke:#FDA734;stroke-width:1;stroke-dasharray:4 3}
+.lead{stroke:#555D6B;stroke-width:.9;fill:none}
+.num{fill:#0B0E18;font-size:10px;font-weight:700}
+.numw{fill:#FFFFFF;font-size:10px;font-weight:700}
+.springbody{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.ghost{fill:none;stroke:#555D6B;stroke-dasharray:4 3}
+.arrowl{stroke:#0B0E18;stroke-width:1.3;fill:none}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="92" width="700" height="250" fill="#F3F0E9"/>
+    <rect x="40" y="172.5" width="467.5" height="127.5" class="shell"/>
+    <rect x="129.25" y="277.9" width="289" height="15.3" class="disp"/>
+    <rect x="57" y="256.65" width="433.5" height="13.6" class="pcbs"/>
+    <rect x="103.75" y="191.2" width="340" height="51" class="batt"/>
+    <text x="273.75" y="221" text-anchor="middle" class="tm">battery 604065</text>
+    <text x="273.75" y="189" text-anchor="middle" class="tm" font-size="9">1 mm swell gap</text>
+    <rect x="91" y="172.5" width="365.5" height="10.2" class="wall"/>
+    <rect x="52.75" y="172.5" width="38.25" height="84.15" fill="#2B303C" stroke="#5A6273" stroke-width=".6"/>
+    <rect x="456.5" y="172.5" width="38.25" height="84.15" fill="#2B303C" stroke="#5A6273" stroke-width=".6"/>
+    <rect x="60.4" y="170.5" width="23.8" height="2.4" class="gold"/><rect x="463.3" y="170.5" width="23.8" height="2.4" class="gold"/>
+    <rect x="50.2" y="165.7" width="447.1" height="6.8" class="pcbs"/>
+    <line x1="66.35" y1="165.7" x2="66.35" y2="157.2" class="goldl"/><line x1="78.25" y1="165.7" x2="78.25" y2="157.2" class="goldl"/>
+    <line x1="469.25" y1="165.7" x2="469.25" y2="157.2" class="goldl"/><line x1="481.15" y1="165.7" x2="481.15" y2="157.2" class="goldl"/>
+    <rect x="57" y="143.6" width="204" height="13.6" class="pcbs"/><rect x="286.5" y="143.6" width="204" height="13.6" class="pcbs"/>
+    <rect x="108" y="122.35" width="51" height="21.25" class="part"/><rect x="180" y="135" width="25" height="8.6" class="part"/>
+    <rect x="337" y="126.6" width="85" height="17" class="part"/><rect x="440" y="137" width="20" height="6.6" class="part"/>
+    <line x1="57" y1="122.35" x2="490.5" y2="122.35" class="guide"/>
+    <rect x="50.2" y="113.85" width="447.1" height="6.8" class="wall"/>
+    <rect x="40" y="113.85" width="10.2" height="58.65" class="wall"/><rect x="497.3" y="113.85" width="10.2" height="58.65" class="wall"/>
+    <rect x="268.65" y="120.65" width="10.2" height="45.05" class="wall"/>
+    <text x="66" y="154" class="tm" font-size="9" fill="#E6ECF5">Bay A module</text><text x="300" y="155" class="tm" font-size="9" fill="#E6ECF5">Bay B module</text>
+    <g class="lead">
+      <line x1="510" y1="117.3" x2="560" y2="104"/><line x1="510" y1="121.5" x2="560" y2="120"/><line x1="510" y1="133" x2="560" y2="136"/>
+      <line x1="510" y1="150.4" x2="560" y2="152"/><line x1="510" y1="161.5" x2="560" y2="168"/><line x1="510" y1="169.1" x2="560" y2="184"/>
+      <line x1="510" y1="236" x2="560" y2="236"/>
+    </g>
+    <text x="566" y="107" class="t">0.8 lid</text>
+    <text x="566" y="123" class="t">0.2 clearance</text>
+    <text x="566" y="139" class="t">2.5 parts (estimate)</text>
+    <text x="566" y="155" class="t">1.6 module board</text>
+    <text x="566" y="171" class="t">1.0 springs, compressed</text>
+    <text x="566" y="187" class="t">0.8 carrier board</text>
+    <text x="566" y="208" class="h">≈ 6.9 mm pack</text>
+    <text x="566" y="239" class="t">15.0 core</text>
+    <text x="566" y="256" class="tm">badge ≈ 21.9 mm</text>
+    <text x="40" y="320" class="tm">To keep the pack at 6.0 mm, parts drop to about 1.6 mm: the first mechanical decision.</text>
+    <text x="40" y="334" class="tm">Dark riser strips at both edges carry the badge's back pads up beside the battery.</text>
+  </svg>
