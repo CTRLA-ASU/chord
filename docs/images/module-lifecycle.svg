@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="335" viewBox="0 0 700 335" role="img" aria-label="Module lifecycle: empty, detected, read ID, checks, ask, power up, running, stop, with a refused or fault path">
+<style>
+svg{display:block;width:100%;height:auto;min-width:620px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11px}
+.t{fill:#0B0E18;font-weight:650;font-size:11.5px}
+.tm{fill:#555D6B;font-size:10.5px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.dim{stroke:#555D6B;stroke-width:1;fill:none}
+.dimt{fill:#555D6B;font-size:10px;font-weight:600}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.padb{fill:none;stroke:#C9A227;stroke-width:1.4;stroke-dasharray:2.2 1.6}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:1.6}
+.zone{fill:#FDA734;fill-opacity:.22;stroke:#FDA734;stroke-width:1.2;stroke-dasharray:4 3}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:3 2.5;opacity:.8}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.9}
+.wall{fill:#DDD6C7;stroke:#555D6B;stroke-width:.8}
+.shell{fill:#DDD6C7;fill-opacity:.35;stroke:#555D6B;stroke-width:.8}
+.pcbs{fill:#161A22;stroke:#3A4258;stroke-width:.8}
+.batt{fill:#B8BEC8;fill-opacity:.35;stroke:#8C95A6;stroke-width:.8}
+.part{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.disp{fill:#0B0E18;stroke:#5A6273;stroke-width:.6}
+.gold{fill:#C9A227}
+.goldl{stroke:#C9A227;stroke-width:2;stroke-linecap:round}
+.guide{stroke:#FDA734;stroke-width:1;stroke-dasharray:4 3}
+.lead{stroke:#555D6B;stroke-width:.9;fill:none}
+.num{fill:#0B0E18;font-size:10px;font-weight:700}
+.numw{fill:#FFFFFF;font-size:10px;font-weight:700}
+.springbody{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.ghost{fill:none;stroke:#555D6B;stroke-dasharray:4 3}
+.arrowl{stroke:#0B0E18;stroke-width:1.3;fill:none}
+.blk{fill:#FFFFFF;stroke:#0B0E18;stroke-width:1.1}
+.blk2{fill:#FFFFFF;stroke:#555D6B;stroke-width:1}
+.bad{fill:#FFFFFF;stroke:#E73035;stroke-width:1.4}
+.ans{fill:#0B0E18}
+.anst{fill:#FFFFFF;font-weight:700;font-size:11.5px}
+.anss{fill:#FFFFFF;font-size:10px;opacity:.85}
+.wire{stroke:#0B0E18;stroke-width:1.1;fill:none}
+.wire2{stroke:#555D6B;stroke-width:1;fill:none}
+.cell{fill:none;stroke:#DDD6C7;stroke-width:1}
+.bi{fill:#555D6B;font-size:8.5px}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="335" fill="#F3F0E9"/>
+  <defs><marker id="sa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#0B0E18"/></marker></defs>
+  <rect x="20" y="30" width="110" height="40" rx="6" class="blk"/><text x="75.0" y="54.0" text-anchor="middle" class="t">EMPTY</text><rect x="180" y="30" width="120" height="40" rx="6" class="blk"/><text x="240.0" y="54.0" text-anchor="middle" class="t">DETECTED</text><rect x="350" y="30" width="110" height="40" rx="6" class="blk"/><text x="405.0" y="54.0" text-anchor="middle" class="t">READ ID</text><rect x="510" y="30" width="170" height="40" rx="6" class="blk"/><text x="595.0" y="54.0" text-anchor="middle" class="t">CHECKS</text>
+  <rect x="510" y="130" width="170" height="40" rx="6" class="blk"/><text x="595.0" y="154.0" text-anchor="middle" class="t">ASK THE MEMBER</text><rect x="330" y="130" width="140" height="40" rx="6" class="blk"/><text x="400.0" y="154.0" text-anchor="middle" class="t">POWER UP</text><rect x="180" y="130" width="110" height="40" rx="6" class="blk"/><text x="235.0" y="154.0" text-anchor="middle" class="t">RUNNING</text><rect x="20" y="130" width="110" height="40" rx="6" class="blk"/><text x="75.0" y="154.0" text-anchor="middle" class="t">STOP</text>
+  <rect x="300" y="215" width="200" height="40" rx="6" class="bad"/><text x="400.0" y="233.0" text-anchor="middle" class="t">REFUSED / FAULT</text><text x="400.0" y="246.0" text-anchor="middle" class="tm">explained on screen</text>
+  <path d="M130 50 H178" class="wire" marker-end="url(#sa)"/><text x="154" y="44" text-anchor="middle" class="tm">found</text>
+  <path d="M300 50 H348" class="wire" marker-end="url(#sa)"/><text x="324" y="44" text-anchor="middle" class="tm">read</text>
+  <path d="M460 50 H508" class="wire" marker-end="url(#sa)"/><text x="484" y="44" text-anchor="middle" class="tm">CRC ok</text>
+  <path d="M640 70 V128" class="wire" marker-end="url(#sa)"/><text x="646" y="103" class="tm">all pass</text>
+  <path d="M510 150 H472" class="wire" marker-end="url(#sa)"/><text x="491" y="144" text-anchor="middle" class="tm">yes</text>
+  <path d="M330 150 H292" class="wire" marker-end="url(#sa)"/><text x="311" y="144" text-anchor="middle" class="tm">bound</text>
+  <path d="M180 150 H132" class="wire" marker-end="url(#sa)"/><text x="156" y="144" text-anchor="middle" class="tm">gone</text>
+  <path d="M75 130 V72" class="wire" marker-end="url(#sa)"/><text x="81" y="104" class="tm">safe</text>
+  <path d="M405 70 V213" class="wire" marker-end="url(#sa)"/><text x="411" y="96" class="tm">bad CRC</text>
+  <path d="M560 70 V100 H490 V213" class="wire" marker-end="url(#sa)"/><text x="496" y="118" class="tm">a check fails</text>
+  <path d="M300 235 H75 V172" class="wire" marker-end="url(#sa)"/><text x="190" y="229" text-anchor="middle" class="tm">power stays off</text>
+  <text x="20" y="282" class="t">Found:</text><text x="68" y="282" class="tm">an ID chip answers on its channel, the head's DET closes, or a pod answers a probe.</text>
+  <text x="20" y="297" class="t">Checks:</text><text x="68" y="297" class="tm">fits the power pool · one external transmitter · LAB flag vs the member's training · no I2C clash · API version.</text>
+  <text x="20" y="312" class="t">Power up:</text><text x="80" y="312" class="tm">3V3 is already on for the ID chip → VBAT on → CIPO and IO released → driver bound by name.</text>
+  <text x="20" y="327" class="t">Gone:</text><text x="68" y="327" class="tm">ID stops answering, DET opens, the lid lifts, or an eFuse trips. Code on a module never runs by itself.</text>
+</svg>

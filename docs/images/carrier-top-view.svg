@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="400" viewBox="0 0 700 400" role="img" aria-label="Carrier top view with two pockets, spring rows over the battery side strips, dowel pins, interlock springs, cover pads, screws and the tool exit slot">
+<style>
+svg{display:block;width:100%;height:auto;min-width:620px;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:11px}
+.t{fill:#0B0E18;font-weight:650;font-size:11.5px}
+.tm{fill:#555D6B;font-size:10.5px}
+.h{fill:#0B0E18;font-weight:700;font-size:12.5px}
+.dim{stroke:#555D6B;stroke-width:1;fill:none}
+.dimt{fill:#555D6B;font-size:10px;font-weight:600}
+.board{fill:#161A22;stroke:#3A4258;stroke-width:1.5}
+.padb{fill:none;stroke:#C9A227;stroke-width:1.4;stroke-dasharray:2.2 1.6}
+.hole{fill:#F3F0E9;stroke:#C9A227;stroke-width:1.6}
+.zone{fill:#FDA734;fill-opacity:.22;stroke:#FDA734;stroke-width:1.2;stroke-dasharray:4 3}
+.silk{fill:none;stroke:#E6ECF5;stroke-width:.9;stroke-dasharray:3 2.5;opacity:.8}
+.silktext{fill:#E6ECF5;font-size:9.5px;opacity:.9}
+.wall{fill:#DDD6C7;stroke:#555D6B;stroke-width:.8}
+.shell{fill:#DDD6C7;fill-opacity:.35;stroke:#555D6B;stroke-width:.8}
+.pcbs{fill:#161A22;stroke:#3A4258;stroke-width:.8}
+.batt{fill:#B8BEC8;fill-opacity:.35;stroke:#8C95A6;stroke-width:.8}
+.part{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.disp{fill:#0B0E18;stroke:#5A6273;stroke-width:.6}
+.gold{fill:#C9A227}
+.goldl{stroke:#C9A227;stroke-width:2;stroke-linecap:round}
+.guide{stroke:#FDA734;stroke-width:1;stroke-dasharray:4 3}
+.lead{stroke:#555D6B;stroke-width:.9;fill:none}
+.num{fill:#0B0E18;font-size:10px;font-weight:700}
+.numw{fill:#FFFFFF;font-size:10px;font-weight:700}
+.springbody{fill:#5A6273;stroke:#8C95A6;stroke-width:.6}
+.ghost{fill:none;stroke:#555D6B;stroke-dasharray:4 3}
+.arrowl{stroke:#0B0E18;stroke-width:1.3;fill:none}
+.pocket{fill:#F3F0E9;stroke:#555D6B;stroke-width:.9}
+.modg{fill:#161A22;fill-opacity:.55}
+.steel{fill:#C9CED6;stroke:#5A6273;stroke-width:.8}
+.screw{fill:none;stroke:#0B0E18;stroke-width:1.4}
+.mk{fill:#0B0E18}
+.mkt{fill:#F3F0E9;font-size:9px;font-weight:700}
+.khl{stroke:#00C8E6;stroke-width:1.1}
+.keep{fill:url(#kh2);stroke:#00C8E6;stroke-width:1}
+.rsv{fill:none;stroke:#555D6B;stroke-width:1.2;stroke-dasharray:2 1.5}
+.headb{fill:#E73035;fill-opacity:.85;stroke:#0B0E18;stroke-width:.8}
+.pin{font-size:9px;fill:#0B0E18}
+svg{display:block;min-width:0;width:auto}
+</style>
+<rect x="0" y="0" width="700" height="400" fill="#F3F0E9"/>
+    <defs><pattern id="kh2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" class="khl"/></pattern></defs>
+    <line x1="40" y1="20" x2="238" y2="20" class="dim"/><line x1="40" y1="15" x2="40" y2="25" class="dim"/><line x1="238" y1="15" x2="238" y2="25" class="dim"/><text x="139" y="16" text-anchor="middle" class="dimt">55.0</text>
+    <line x1="26" y1="30" x2="26" y2="372" class="dim"/><line x1="21" y1="30" x2="31" y2="30" class="dim"/><line x1="21" y1="372" x2="31" y2="372" class="dim"/><text x="20" y="205" text-anchor="middle" class="dimt" transform="rotate(-90 20 205)">95.0</text>
+    <rect x="40" y="30" width="198" height="342" rx="7" class="wall"/>
+    <rect x="40" y="37.2" width="36" height="79.2" class="keep"/>
+    <rect x="44.32" y="118.2" width="92.52" height="234" class="pocket"/><rect x="141.16" y="118.2" width="92.52" height="234" class="pocket"/>
+    <rect x="47.2" y="120" width="86.4" height="230.4" rx="2" class="modg"/><rect x="144.4" y="120" width="86.4" height="230.4" rx="2" class="modg"/>
+    <line x1="246" y1="118.2" x2="246" y2="352.2" class="dim"/><line x1="241" y1="118.2" x2="251" y2="118.2" class="dim"/><line x1="241" y1="352.2" x2="251" y2="352.2" class="dim"/><text x="250" y="238" class="dimt">65.0</text>
+    <line x1="44.32" y1="128" x2="136.84" y2="128" class="dim" stroke-dasharray="3 2"/><text x="90" y="140" text-anchor="middle" class="dimt" fill="#E6ECF5">25.7</text>
+    <rect x="119.2" y="58.8" width="14.4" height="14.4" class="gold"/><rect x="144.4" y="58.8" width="14.4" height="14.4" class="gold"/>
+    <text x="126.4" y="84" text-anchor="middle" class="dimt">VIN</text><text x="151.6" y="84" text-anchor="middle" class="dimt">GND</text>
+    <circle cx="130" cy="111" r="2.4" class="gold"/><circle cx="148" cy="111" r="2.4" class="gold"/>
+    <g class="gold"><circle cx="53.68" cy="212.34" r="1.9"/><circle cx="53.68" cy="221.48" r="1.9"/><circle cx="53.68" cy="230.63" r="1.9"/><circle cx="53.68" cy="239.77" r="1.9"/><circle cx="53.68" cy="248.92" r="1.9"/><circle cx="53.68" cy="258.06" r="1.9"/><circle cx="62.82" cy="212.34" r="1.9"/><circle cx="62.82" cy="221.48" r="1.9"/><circle cx="62.82" cy="230.63" r="1.9"/><circle cx="62.82" cy="239.77" r="1.9"/><circle cx="62.82" cy="248.92" r="1.9"/><circle cx="62.82" cy="258.06" r="1.9"/><circle cx="215.18" cy="212.34" r="1.9"/><circle cx="215.18" cy="221.48" r="1.9"/><circle cx="215.18" cy="230.63" r="1.9"/><circle cx="215.18" cy="239.77" r="1.9"/><circle cx="215.18" cy="248.92" r="1.9"/><circle cx="215.18" cy="258.06" r="1.9"/><circle cx="224.32" cy="212.34" r="1.9"/><circle cx="224.32" cy="221.48" r="1.9"/><circle cx="224.32" cy="230.63" r="1.9"/><circle cx="224.32" cy="239.77" r="1.9"/><circle cx="224.32" cy="248.92" r="1.9"/><circle cx="224.32" cy="258.06" r="1.9"/></g>
+    <circle cx="119.2" cy="321.6" r="2.7" class="steel"/><circle cx="90.4" cy="206.4" r="2.7" class="steel"/>
+    <circle cx="158.8" cy="148.8" r="2.7" class="steel"/><circle cx="187.6" cy="264" r="2.7" class="steel"/>
+    <circle cx="52.6" cy="42.6" r="4.5" class="screw"/><circle cx="225.4" cy="42.6" r="4.5" class="screw"/><circle cx="52.6" cy="359.4" r="4.5" class="screw"/><circle cx="225.4" cy="359.4" r="4.5" class="screw"/>
+    <circle cx="76" cy="102" r="3" class="screw"/><circle cx="202" cy="102" r="3" class="screw"/><circle cx="80" cy="361" r="3" class="screw"/><circle cx="198" cy="361" r="3" class="screw"/>
+    <rect x="155.2" y="366" width="64.8" height="6" fill="#0B0D12"/>
+    <circle cx="100" cy="300" r="7" class="mk"/><text x="100" y="303.2" text-anchor="middle" class="mkt">1</text><circle cx="78" cy="236" r="7" class="mk"/><text x="78" y="239.2" text-anchor="middle" class="mkt">2</text><circle cx="104" cy="206" r="7" class="mk"/><text x="104" y="209.2" text-anchor="middle" class="mkt">3</text><circle cx="139" cy="98" r="7" class="mk"/><text x="139" y="101.2" text-anchor="middle" class="mkt">4</text><circle cx="62" cy="56" r="7" class="mk"/><text x="62" y="59.2" text-anchor="middle" class="mkt">5</text><circle cx="90" cy="100" r="7" class="mk"/><text x="90" y="103.2" text-anchor="middle" class="mkt">6</text><circle cx="187" cy="387" r="7" class="mk"/><text x="187" y="390.2" text-anchor="middle" class="mkt">7</text><circle cx="139" cy="46" r="7" class="mk"/><text x="139" y="49.2" text-anchor="middle" class="mkt">8</text><circle cx="58" cy="88" r="7" class="mk"/><text x="58" y="91.2" text-anchor="middle" class="mkt">9</text>
+    <text x="270" y="40" class="h">Carrier parts</text>
+    <text x="270" y="66" class="t">1  Two pockets, 25.7 × 65.0 mm</text><text x="284" y="79" class="tm">for 24 × 64 mm modules: 0.85 mm side and 0.5 mm end clearance</text><text x="270" y="100" class="t">2  12 springs up per bay, 12 down to the badge</text><text x="284" y="113" class="tm">joined one-to-one through the carrier board</text><text x="270" y="134" class="t">3  Steel dowel pins, Ø1.5 mm</text><text x="284" y="147" class="tm">Bay B is Bay A turned 180° about the centre of the back</text><text x="270" y="168" class="t">4  Lid interlock</text><text x="284" y="181" class="tm">two short springs bridged by a gold plate on the lid</text><text x="270" y="202" class="t">5  4 × M2.5 screws to the badge</text><text x="284" y="215" class="tm">in the corners, outside the battery footprint</text><text x="270" y="236" class="t">6  4 × M2 lid screws</text><text x="284" y="249" class="tm">in the solid end blocks</text><text x="270" y="270" class="t">7  Tool exit slot, 18.0 × 3.2 mm</text><text x="284" y="283" class="tm">in Bay B's bottom wall only</text><text x="270" y="304" class="t">8  Cover pads: VIN_EXT + GND</text><text x="284" y="317" class="tm">passed through so Qi, solar or battery covers still fit</text><text x="270" y="338" class="t">9  North block is plastic only</text><text x="284" y="351" class="tm">it sits over the badge's antenna keep-out (hatched)</text>
+  </svg>
