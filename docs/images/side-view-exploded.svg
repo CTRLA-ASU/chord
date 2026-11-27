@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="256" viewBox="0 96 700 256" role="img" aria-label="Exploded side view: badge core, carrier with springs, bay module, lid and optional power cover stacked above; the radio head pushes onto the top end">
+<style>
+svg{--c-text:#0B0E18;--c-muted:#555D6B;--c-line:#DDD6C7;--c-card:#FFFFFF;--c-body:#E8E3D8;--c-pack:#FDA734;--c-stack:#E73035;--c-stack-bg:rgba(231,48,53,.12);--c-rail:#E73035;--c-pad:#C9A227;--c-keep:#00C8E6;--c-board:#33AA54;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:12.5px}
+.bg{fill:#F3F0E9}
+.t{fill:var(--c-text);font-weight:600}.tm{fill:var(--c-muted);font-size:11.5px}.tv{fill:var(--c-text);font-weight:700;font-size:12.5px}
+.body{fill:var(--c-body);stroke:var(--c-text);stroke-width:1.2}.pack{fill:var(--c-pack);stroke:var(--c-text);stroke-width:1}
+.stack{fill:var(--c-stack-bg);stroke:var(--c-stack);stroke-width:1.5}.sep{stroke:var(--c-stack);stroke-width:1.2}
+.neutral{fill:var(--c-line);stroke:var(--c-muted);stroke-width:1}.band{fill:var(--c-keep);fill-opacity:.14}
+.dash{stroke:var(--c-keep);stroke-width:1;stroke-dasharray:5 4}.base{stroke:var(--c-text);stroke-width:1.2}
+.pocket{fill:var(--c-pack);fill-opacity:.2;stroke:var(--c-pack);stroke-width:1.2}.mod{fill:var(--c-board);fill-opacity:.22;stroke:var(--c-board);stroke-width:1.5}
+.pad{fill:var(--c-pad);stroke:var(--c-text);stroke-width:.6}.ink{fill:var(--c-text)}.tool{fill:var(--c-card);stroke:var(--c-text);stroke-width:1.2}
+.hole{fill:var(--c-card);stroke:var(--c-text);stroke-width:1.2}.batt{fill:none;stroke:var(--c-text);stroke-opacity:.55;stroke-width:1.3;stroke-dasharray:6 4}
+.battfill{fill:var(--c-muted);fill-opacity:.22;stroke:var(--c-text);stroke-opacity:.5;stroke-dasharray:5 3}.rail{fill:var(--c-rail);stroke:var(--c-text);stroke-width:1}
+.cover{fill:var(--c-muted);fill-opacity:.18;stroke:var(--c-text);stroke-dasharray:5 3}.keep{fill:url(#hatch);stroke:var(--c-keep);stroke-width:1.2}
+.hatchline{stroke:var(--c-keep);stroke-width:1.2}.leader{stroke:var(--c-muted);stroke-width:1;fill:none}
+.guide{stroke:var(--c-muted);stroke-opacity:.6;stroke-width:1;stroke-dasharray:3 4}.spring{stroke:var(--c-pad);stroke-width:2;stroke-linecap:round}
+.boardfill{fill:var(--c-board);fill-opacity:.55;stroke:var(--c-board)}.ghost{fill:none;stroke:var(--c-muted);stroke-dasharray:4 3}
+.part{fill:var(--c-muted)}.modlabel{fill:var(--c-text);font-weight:700;font-size:13px}
+</style>
+<rect class="bg" x="0" y="96" width="700" height="256"/>
+    <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" class="ink"/></marker></defs>
+    <line x1="232" y1="282" x2="232" y2="108" class="guide"/><line x1="436" y1="282" x2="436" y2="108" class="guide"/>
+    <rect x="150" y="106" width="304" height="8" class="cover"/>
+    <rect x="230" y="139.6" width="208" height="2.6" class="body"/>
+    <rect x="234.4" y="136.6" width="4" height="3" class="ink"/><rect x="429.6" y="136.6" width="4" height="3" class="ink"/>
+    <rect x="234" y="183.9" width="204.8" height="5.1" class="ghost"/>
+    <rect x="230" y="187.9" width="204.8" height="5.1" class="boardfill"/>
+    <rect x="326" y="184.7" width="9.6" height="3.2" class="ink"/>
+    <rect x="358" y="182" width="29" height="5.9" class="part"/>
+    <g class="pad"><rect x="309.6" y="193" width="5" height="1.6"/><rect x="317.7" y="193" width="5" height="1.6"/><rect x="325.8" y="193" width="5" height="1.6"/><rect x="334" y="193" width="5" height="1.6"/><rect x="342.1" y="193" width="5" height="1.6"/><rect x="350.2" y="193" width="5" height="1.6"/></g>
+    <rect x="150" y="234.6" width="304" height="2.6" class="pack"/>
+    <rect x="150" y="216.4" width="80" height="20.8" class="pack"/>
+    <rect x="434.8" y="216.4" width="19.2" height="20.8" class="pack"/>
+    <g><line x1="312.1" y1="241.7" x2="312.1" y2="230.8" class="spring"/><line x1="320.2" y1="241.7" x2="320.2" y2="230.8" class="spring"/><line x1="328.3" y1="241.7" x2="328.3" y2="230.8" class="spring"/><line x1="336.5" y1="241.7" x2="336.5" y2="230.8" class="spring"/><line x1="344.6" y1="241.7" x2="344.6" y2="230.8" class="spring"/><line x1="352.7" y1="241.7" x2="352.7" y2="230.8" class="spring"/></g>
+    <rect x="150" y="282" width="304" height="48" rx="6" class="body"/>
+    <rect x="230" y="286.8" width="208" height="19.2" class="battfill"/>
+    <rect x="156.4" y="313.7" width="291.2" height="5.1" class="boardfill"/>
+    <rect x="175.6" y="321.7" width="102.4" height="5.8" class="part"/>
+    <g class="pad"><rect x="309.6" y="280.5" width="5" height="2"/><rect x="317.7" y="280.5" width="5" height="2"/><rect x="325.8" y="280.5" width="5" height="2"/><rect x="334" y="280.5" width="5" height="2"/><rect x="342.1" y="280.5" width="5" height="2"/><rect x="350.2" y="280.5" width="5" height="2"/></g>
+    <g><line x1="146" y1="294" x2="150" y2="294" class="spring"/><line x1="146" y1="304" x2="150" y2="304" class="spring"/><line x1="146" y1="314" x2="150" y2="314" class="spring"/><line x1="146" y1="324" x2="150" y2="324" class="spring"/></g>
+    <rect x="9.2" y="301.2" width="32" height="9.6" rx="3" class="ink"/>
+    <rect x="41.2" y="302.8" width="6.4" height="6.4" class="pad"/>
+    <rect x="47.6" y="282" width="57.6" height="48" rx="5" class="rail"/>
+    <g class="pad"><rect x="105.2" y="292" width="2" height="4"/><rect x="105.2" y="302" width="2" height="4"/><rect x="105.2" y="312" width="2" height="4"/><rect x="105.2" y="322" width="2" height="4"/></g>
+    <line x1="111" y1="288" x2="143" y2="288" class="leader" marker-end="url(#arr)"/>
+    <text x="15" y="258" class="t">Radio head (always fitted)</text><text x="15" y="273" class="tm">pushes straight onto the top end</text>
+    <line x1="456" y1="110" x2="464" y2="110" class="leader"/><text x="470" y="110" class="t">Power cover (optional)</text><text x="470" y="125" class="tm">Qi, solar or extra battery</text>
+    <line x1="440" y1="141" x2="464" y2="149" class="leader"/><text x="470" y="153" class="t">Lid, screwed on</text><text x="470" y="168" class="tm">interlock cuts power when off</text>
+    <line x1="436" y1="190" x2="464" y2="194" class="leader"/><text x="470" y="198" class="t">Bay module</text><text x="470" y="213" class="tm">board, gold pads, ID chip</text>
+    <line x1="456" y1="227" x2="464" y2="236" class="leader"/><text x="470" y="240" class="t">Carrier (the rear pack)</text><text x="470" y="255" class="tm">springs press down and up</text>
+    <line x1="456" y1="300" x2="464" y2="300" class="leader"/><text x="470" y="300" class="t">Badge core, face down</text><text x="470" y="315" class="tm">flat gold pads on its back</text>
+    <text x="15" y="346" class="tm">North end on the left. Gaps are exaggerated; part heights are estimates.</text>
+  </svg>

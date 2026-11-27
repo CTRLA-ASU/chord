@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="540" viewBox="0 0 700 540" role="img" aria-label="Back of the badge: radio head at the top with dovetail arms, antenna keep-out, lid interlock, two bays with spring contacts beside the battery, offset dowels, and the tool exit in the bottom wall">
+<style>
+svg{--c-text:#0B0E18;--c-muted:#555D6B;--c-line:#DDD6C7;--c-card:#FFFFFF;--c-body:#E8E3D8;--c-pack:#FDA734;--c-stack:#E73035;--c-stack-bg:rgba(231,48,53,.12);--c-rail:#E73035;--c-pad:#C9A227;--c-keep:#00C8E6;--c-board:#33AA54;font-family:Inter,"Segoe UI",Helvetica,Arial,sans-serif}
+text{font-size:12.5px}
+.bg{fill:#F3F0E9}
+.t{fill:var(--c-text);font-weight:600}.tm{fill:var(--c-muted);font-size:11.5px}.tv{fill:var(--c-text);font-weight:700;font-size:12.5px}
+.body{fill:var(--c-body);stroke:var(--c-text);stroke-width:1.2}.pack{fill:var(--c-pack);stroke:var(--c-text);stroke-width:1}
+.stack{fill:var(--c-stack-bg);stroke:var(--c-stack);stroke-width:1.5}.sep{stroke:var(--c-stack);stroke-width:1.2}
+.neutral{fill:var(--c-line);stroke:var(--c-muted);stroke-width:1}.band{fill:var(--c-keep);fill-opacity:.14}
+.dash{stroke:var(--c-keep);stroke-width:1;stroke-dasharray:5 4}.base{stroke:var(--c-text);stroke-width:1.2}
+.pocket{fill:var(--c-pack);fill-opacity:.2;stroke:var(--c-pack);stroke-width:1.2}.mod{fill:var(--c-board);fill-opacity:.22;stroke:var(--c-board);stroke-width:1.5}
+.pad{fill:var(--c-pad);stroke:var(--c-text);stroke-width:.6}.ink{fill:var(--c-text)}.tool{fill:var(--c-card);stroke:var(--c-text);stroke-width:1.2}
+.hole{fill:var(--c-card);stroke:var(--c-text);stroke-width:1.2}.batt{fill:none;stroke:var(--c-text);stroke-opacity:.55;stroke-width:1.3;stroke-dasharray:6 4}
+.battfill{fill:var(--c-muted);fill-opacity:.22;stroke:var(--c-text);stroke-opacity:.5;stroke-dasharray:5 3}.rail{fill:var(--c-rail);stroke:var(--c-text);stroke-width:1}
+.cover{fill:var(--c-muted);fill-opacity:.18;stroke:var(--c-text);stroke-dasharray:5 3}.keep{fill:url(#hatch);stroke:var(--c-keep);stroke-width:1.2}
+.hatchline{stroke:var(--c-keep);stroke-width:1.2}.leader{stroke:var(--c-muted);stroke-width:1;fill:none}
+.guide{stroke:var(--c-muted);stroke-opacity:.6;stroke-width:1;stroke-dasharray:3 4}.spring{stroke:var(--c-pad);stroke-width:2;stroke-linecap:round}
+.boardfill{fill:var(--c-board);fill-opacity:.55;stroke:var(--c-board)}.ghost{fill:none;stroke:var(--c-muted);stroke-dasharray:4 3}
+.part{fill:var(--c-muted)}.modlabel{fill:var(--c-text);font-weight:700;font-size:13px}
+</style>
+<rect class="bg" x="0" y="0" width="700" height="540"/>
+    <defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" class="hatchline"/></pattern></defs>
+    <rect x="147" y="2" width="6" height="26" rx="2" class="ink"/>
+    <rect x="145" y="28" width="10" height="12" class="pad"/>
+    <rect x="40" y="40" width="220" height="72" rx="10" class="rail"/>
+    <rect x="34" y="104" width="6" height="56" rx="2" class="rail"/><rect x="260" y="104" width="6" height="56" rx="2" class="rail"/>
+    <rect x="40" y="120" width="220" height="380" rx="16" class="body"/>
+    <g class="pad"><rect x="91" y="121" width="5" height="3"/><rect x="101.2" y="121" width="5" height="3"/><rect x="111.4" y="121" width="5" height="3"/><rect x="121.6" y="121" width="5" height="3"/><rect x="131.8" y="121" width="5" height="3"/><rect x="142" y="121" width="5" height="3"/><rect x="152.2" y="121" width="5" height="3"/><rect x="162.4" y="121" width="5" height="3"/><rect x="172.6" y="121" width="5" height="3"/><rect x="182.8" y="121" width="5" height="3"/><rect x="193" y="121" width="5" height="3"/><rect x="203.2" y="121" width="5" height="3"/></g>
+    <rect x="40" y="128" width="40" height="88" class="keep"/>
+    <circle cx="150" cy="208" r="3.5" class="pad"/>
+    <rect x="44.8" y="220" width="103.6" height="256" class="pocket"/>
+    <rect x="151.6" y="220" width="103.6" height="256" class="pocket"/>
+    <rect x="48" y="220" width="96" height="256" class="mod"/>
+    <rect x="156" y="220" width="96" height="256" class="mod"/>
+    <text x="96" y="434" text-anchor="middle" class="modlabel">Bay A</text>
+    <text x="204" y="280" text-anchor="middle" class="modlabel">Bay B</text>
+    <rect x="70" y="220" width="160" height="260" class="batt"/>
+    <g class="pad">
+      <circle cx="52.4" cy="322.6" r="3"/><circle cx="62.4" cy="322.6" r="3"/><circle cx="52.4" cy="332.8" r="3"/><circle cx="62.4" cy="332.8" r="3"/><circle cx="52.4" cy="342.9" r="3"/><circle cx="62.4" cy="342.9" r="3"/><circle cx="52.4" cy="353.1" r="3"/><circle cx="62.4" cy="353.1" r="3"/><circle cx="52.4" cy="363.2" r="3"/><circle cx="62.4" cy="363.2" r="3"/><circle cx="52.4" cy="373.4" r="3"/><circle cx="62.4" cy="373.4" r="3"/>
+      <circle cx="237.6" cy="322.6" r="3"/><circle cx="247.6" cy="322.6" r="3"/><circle cx="237.6" cy="332.8" r="3"/><circle cx="247.6" cy="332.8" r="3"/><circle cx="237.6" cy="342.9" r="3"/><circle cx="247.6" cy="342.9" r="3"/><circle cx="237.6" cy="353.1" r="3"/><circle cx="247.6" cy="353.1" r="3"/><circle cx="237.6" cy="363.2" r="3"/><circle cx="247.6" cy="363.2" r="3"/><circle cx="237.6" cy="373.4" r="3"/><circle cx="247.6" cy="373.4" r="3"/>
+    </g>
+    <rect x="72" y="340" width="12" height="16" class="ink"/><rect x="216" y="340" width="12" height="16" class="ink"/>
+    <circle cx="96" cy="240" r="3.2" class="hole"/><rect x="122" y="452.8" width="12" height="6.4" rx="3.2" class="hole"/>
+    <circle cx="204" cy="456" r="3.2" class="hole"/><rect x="166" y="236.8" width="12" height="6.4" rx="3.2" class="hole"/>
+    <rect x="176" y="466" width="30" height="40" rx="2" class="tool"/><rect x="214" y="472" width="26" height="34" rx="3" class="tool"/>
+    <rect x="124" y="494" width="40" height="5" rx="2" class="ink"/>
+    <g class="leader">
+      <line x1="260" y1="76" x2="292" y2="56"/><line x1="266" y1="140" x2="292" y2="108"/><line x1="80" y1="170" x2="292" y2="160"/>
+      <line x1="154" y1="208" x2="292" y2="212"/><line x1="144" y1="266" x2="292" y2="264"/><line x1="204" y1="292" x2="292" y2="316"/>
+      <line x1="251" y1="348" x2="292" y2="368"/><line x1="207" y1="456" x2="292" y2="420"/><line x1="240" y1="490" x2="292" y2="472"/>
+      <line x1="230" y1="478" x2="292" y2="524"/>
+    </g>
+    <text x="298" y="60" class="t">Radio head, always fitted</text><text x="298" y="75" class="tm">LoRa ships standard; the only place for transmitters</text>
+    <text x="298" y="112" class="t">Dovetail arms + ball detent</text><text x="298" y="127" class="tm">24 spring contacts on the badge's top end face</text>
+    <text x="298" y="164" class="t">Antenna keep-out</text><text x="298" y="179" class="tm">for the badge's own Wi-Fi and Bluetooth antenna</text>
+    <text x="298" y="216" class="t">Lid interlock</text><text x="298" y="231" class="tm">taking the lid off cuts power to both bays</text>
+    <text x="298" y="268" class="t">Bay A, 24 × 64 mm</text><text x="298" y="283" class="tm">receive-only modules, parts about 2.5 mm tall at most</text>
+    <text x="298" y="320" class="t">Bay B is Bay A turned 180°</text><text x="298" y="335" class="tm">so any module fits either bay</text>
+    <text x="298" y="372" class="t">12 spring contacts per bay</text><text x="298" y="387" class="tm">over the strip beside the battery, not on it</text>
+    <text x="298" y="424" class="t">Offset dowels</text><text x="298" y="439" class="tm">a module can't seat backwards</text>
+    <text x="298" y="476" class="t">Bay B is also the tool bay</text><text x="298" y="491" class="tm">cable and USB-C leave through the bottom wall</text>
+    <text x="298" y="528" class="t">Battery under the bays (dashed)</text>
+  </svg>
