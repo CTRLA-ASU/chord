@@ -40,6 +40,7 @@ The name comes from the CTRL+A chord mark: two keys pressed together, a core plu
 | [Expansion system](docs/expansion-system.md) | Radio head, rear pack and bays, pods, covers, dock, contact maps, power and pin budgets, how many modules fit |
 | [Parts catalog](docs/parts-catalog.md) | 222 candidate parts and modules, tagged by where each one plugs in |
 | [Module interface](docs/module-interface.md) | Pin-by-pin and mm-by-mm detail for anyone designing a module or radio head |
+| [Module triage](docs/module-triage.md) | Where every module idea should live, how hard it is, what combines, and a build order |
 | [Board plan](docs/board-plan.md) | Dev board → Rev A → Rev B → production, and what goes on the core board |
 
 ## Planning
