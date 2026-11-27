@@ -19,6 +19,30 @@ What can be attached at the same time, and what limits it:
 | Shared power | 3V3 800 mA total; VBAT 1.2 A peak total | Big loads (NFC field, LoRa transmit) are fine together; the badge refuses a combination that overflows |
 | Height | About 2.5 mm of parts in a bay *(est.)* | Patch antennas, tubes and big connectors don't go in bays |
 
+## Packs: one at a time, many kinds
+
+The back takes **one pack at a time**. Two packs stacked would bring back the stacking problems: about 29 mm thick, signals and power shared through two layers, and no pins left. Instead, packs are swappable: four screws, about a minute. A tool-less latch would be a good later upgrade.
+
+Every pack uses the same back pads:
+- **Signals:** two bays' worth. That's shared SPI with 2 chip selects, 2 IRQ, 2 IO, 2 I2C channels, plus the lid interlock and VIN_EXT/GND.
+- **Power:** 2 × 100 mA on 3V3 and 2 × 300 mA on VBAT.
+- **Bigger than that:** a pack that needs more signals or power brings its own helper chip (e.g. an RP2350 talking SPI) or its own battery.
+- **Identification:** every pack has its own ID chip (proposed manifest class 6, "pack").
+- **No transmitters:** packs sit on the battery against your body, same as bays.
+
+| Pack | What's in it | Thickness *(est.)* | Effort | Verdict |
+|---|---|---|---|---|
+| **Standard pack** | 2 bays: any bay module; Bay B is also the tool exit | +6.9 mm | Medium | First builds |
+| **4-bay sensor pack** | Four smaller bays, sensor-class, with its own I/O expander | +6.9 mm | Medium | Later |
+| **Name-tag pack** | 2.13–2.9" e-ink filling the back: name, role, QR code; stays visible with power off | +4 mm | Low–Medium | Later: fun and visible |
+| **Network pack** | RJ45 built in, W5500 10/100, PoE detection; optional passive tap with two jacks | +15 mm | Medium | Later |
+| **Radiation pack** | PIN-diode radiation sensor, or a short GM tube with its own high-voltage supply | +8–12 mm | Medium | Later |
+| **Big battery pack** | Extra protected cell + charger, feeding VIN_EXT | +6–8 mm | Medium | Later (careful power design) |
+| **Field / auto pack** | CAN FD + LIN + K-line, screw terminals, OBD cable | +10 mm | Medium | Later, LAB |
+| **Bench pack** | Logic analyzer + level shifter + signal generator, run by its own RP2350; probe header | +10 mm | High | Later, maybe |
+
+Specialty packs replace the standard pack. The radio head, pods and (where the pack passes VIN_EXT through) power covers still work alongside them.
+
 ## Worked example: GPS + NFC
 
 **Yes, simple, and both run at once:**
@@ -77,7 +101,7 @@ What can be attached at the same time, and what limits it:
 | Thermal camera (MLX90640) | Pod | Buy | Low | Now (library) |
 | Heart rate / SpO₂ | Pod (needs a finger on it) | Buy | Low | Now (library) |
 | Lightning (AS3935) | Bay | Club board | Medium | **First builds**: good first bay module |
-| Geiger counter | Dock, or a pod on a cable | Buy | Low | Dock: the tube doesn't fit |
+| Geiger / radiation | Radiation pack, or a pod on a cable | Club pack / buy | Medium / Low | Later: doesn't fit a bay |
 | Load cell / thermocouple / soil | Pod | Buy | Low | Now |
 
 ### Positioning
@@ -143,7 +167,7 @@ What can be attached at the same time, and what limits it:
 |---|---|---|---|---|
 | Keyboard, encoder, joystick, trackball, macro keys | Pod | Buy | Low | Now |
 | Haptics (DRV2605L) | Pod, then the core at Rev B | Buy | Low | Now |
-| E-ink name tag | — | Too wide for a bay; SPI, so not a pod | — | Skip for now |
+| E-ink name tag | Name-tag pack | Club pack | Low–Medium | Later |
 | MIDI in/out | Tool bay (TRS jack exit) | Club board | Medium | Later |
 | Mic array, desk speaker | Dock | Buy | Low | Dock |
 

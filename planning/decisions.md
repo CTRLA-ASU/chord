@@ -19,6 +19,7 @@ Keep this current. When something is decided, move it to **Decided** with the da
 | 11 | I/O expander + Qwiic 2 switch parts | | Rev A schematic | | Open |
 | 12 | Vendor IDs for member modules | e.g. one per member or team, assigned by PR | Before the first member module | | Open |
 | 13 | University sign-off | IT, card office, faculty advisor | Before any transmit, RFID or keystroke feature ships | | Open |
+| 15 | Specialty packs | Which to build first; manifest class 6; tool-less latch? | After the standard pack works | | Open |
 | 14 | Confirm I2C addresses and module sizes | From datasheets (several are from memory) | Rev A schematic | | Open |
 
 ## Decided
