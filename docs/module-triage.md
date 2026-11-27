@@ -3,7 +3,7 @@
 **Draft, Nov 2026.** This sorts every module idea so far by where it should live, how hard it is, and whether it's worth doing. Effort and fit are first guesses. Change them as the club learns, especially after the first test print.
 
 - **Rules behind it:** [module interface](module-interface.md).
-- **Individual parts:** [parts catalog](parts-catalog.md).
+- **Individual parts:** all 222 are in the [parts catalog](parts-catalog.md), each tagged with where it fits. This page groups them into module ideas.
 
 ## How modules combine
 
@@ -153,7 +153,28 @@ What can be attached at the same time, and what limits it:
 | Camera / vision | Dock (Grove Vision AI as a pod is the pocket option) | Buy | Low | Dock / pod |
 | FPGA (iCE40) | Tool bay | Club board (needs a 1.2 V rail) | High | Later, maybe |
 | ESP32-P4, Linux boards | Dock | Buy | Low | Dock |
-| Ethernet | Dock | Buy | Low | Dock: the RJ45 doesn't fit |
+| Ethernet | See Network below | | | |
+
+### Network (Ethernet)
+The S31 is a microcontroller.
+- **It can do:** one 10/100 port, and probing a network.
+- **It can't do:**
+  - sit inline between two ports and capture everything, because it has one Ethernet controller and 16 MB of RAM, and microSD writes top out around 10–20 MB/s
+  - gigabit at all
+- **Pins:** its built-in Ethernet needs fixed pins we've already spent.
+- **Size:** an RJ45 jack (about 16 × 13.5 × 21 mm) is taller than the inside of the badge.
+
+Full in/out analysis needs a Linux-class processor, so it goes on the dock.
+
+| Module | Best home | How | Effort | Verdict |
+|---|---|---|---|---|
+| Network probe, one port: link speed, DHCP, gateway, which switch and port you're on (LLDP/CDP), VLAN | Tool bay, with the RJ45 in a small dongle on a short cable | W5500 (SPI, 10/100, raw-frame mode) + RJ45 MagJack | Medium | Later, AUP for anything beyond passive probing |
+| Passive LAN tap, 10/100 | Dock (inline box) | Buy or build the open Throwing Star design; the probe or dock reads one direction at a time | Low | Later |
+| Inline in/out analysis, gigabit, full capture | Network dock | A small two-port Linux router board running bridge + capture tools; Chord acts as the remote and display over USB or Wi-Fi | Medium (mostly software) | Later |
+| Two-port "Chord Net" board variant (S31 Ethernet + 3-port switch with mirroring) | Separate board | New core board without bays | High | Skip for now |
+| PoE detector (is this port powered, which class) | Inside the network probe dongle | Simple isolated sensing circuit | Medium | Maybe, with the probe |
+
+Only plug into club-owned or lab networks. Capturing traffic or scanning ports on campus networks is the same Wiretap Act / CFAA / acceptable-use issue as Wi-Fi sniffing.
 
 ## Suggested build order
 
@@ -173,7 +194,7 @@ What can be attached at the same time, and what limits it:
 - **Patch-antenna GNSS, Geiger tubes, e-ink panels in a bay:** too tall or too wide. Use a head, a pod or the dock.
 - **Two transmitters at once:** the head holds one. Swap heads.
 - **Two cabled tools at once:** one tool exit. Swap, or combine them on one board.
-- **Smartcard slots, RJ45, big screens:** too big. Use the dock.
+- **Smartcard slots, RJ45 jacks, big screens:** too big for the badge. RJ45 can hang off the tool exit in a dongle; full network analysis goes on the dock.
 - **Cellular, satellite, 1 W LoRa:** their grants need 20 cm from the body. Use the dock.
 - **Oscilloscope front end, glitcher, FPGA:** a lot of effort for something a cheap bench tool already does. Buy them for the dock instead.
 - **Extra 2.4 GHz radios:** the S31 already has Wi-Fi, Bluetooth and 802.15.4.
